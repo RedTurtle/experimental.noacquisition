@@ -4,3 +4,7 @@ recursive-include docs *
 recursive-include src *
 global-exclude *pyc
 
+include *.py
+include buildout.cfg
+include travis-4.3.x.cfg
+include travis-5.0.x.cfg
