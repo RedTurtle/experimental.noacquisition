@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.0.0b3 (unreleased)
+1.0.0rer1 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Raise error when traversing between different sites, also with DRYRUN enabled
+  [cekk]
 
 
 1.0.0b2 (2016-06-10)

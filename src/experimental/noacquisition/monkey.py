@@ -99,6 +99,9 @@ def publishTraverse(self, request, name):
                     ##
                     if (IContentish.providedBy(subobject) or
                             IPloneSiteRoot.providedBy(subobject)):
+                        if (getattr(object, 'meta_type', '') == 'Plone Site' and getattr(subobject, 'meta_type', '') == 'Plone Site') and (object.getId() != subobject.getId()):
+                            subobject = None
+                            raise AttributeError
                         logger.warning(
                             'traverse without explicit acquisition '
                             'object=%r name=%r subobject=%r url=%r referer=%r',
