@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.0.0rer1 (unreleased)
---------------------
+1.0.0rer1 (2017-04-12)
+----------------------
 
 - Raise error when traversing between different sites, also with DRYRUN enabled
   [cekk]
