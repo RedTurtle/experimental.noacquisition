@@ -1,10 +1,16 @@
 Changelog
 =========
 
-1.0.0rer2 (unreleased)
+1.0.0rer3.dev0 (unreleased)
 ----------------------
 
-- Nothing changed yet.
+- 
+
+1.0.0rer2 (2017-06-15)
+----------------------
+
+- Commented loggers in monkey.py and monkey_at.py to decrease spam in logs.
+  [cekk]
 
 
 1.0.0rer1 (2017-04-12)

@@ -60,13 +60,13 @@ def __bobo_traverse__(self, REQUEST, name):
                     if REQUEST.get('ACTUAL_URL') and (
                             IContentish.providedBy(target) or
                             IPloneSiteRoot.providedBy(target)):
-                        logger.warning(
-                            'traverse without explicit acquisition '
-                            'object=%r name=%r subobject=%r url=%r referer=%r',
-                            self, name, target,
-                            REQUEST.get('ACTUAL_URL'),
-                            REQUEST.get('HTTP_REFERER', '-')
-                        )
+                        # logger.warning(
+                        #     'traverse without explicit acquisition '
+                        #     'object=%r name=%r subobject=%r url=%r referer=%r',
+                        #     self, name, target,
+                        #     REQUEST.get('ACTUAL_URL'),
+                        #     REQUEST.get('HTTP_REFERER', '-')
+                        # )
                         if not config.DRYRUN:
                             target = None
 
